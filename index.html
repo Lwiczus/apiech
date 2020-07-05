@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	</head>
 	<body class="landing is-preload">
 
@@ -75,10 +76,17 @@
 								jsonFile.onreadystatechange = function() {
 									if (jsonFile.readyState== 4 && jsonFile.status == 200) 
 									{
-										//console.log(jsonFile.responseText);
 										var json = JSON.parse(jsonFile.responseText);
 
 										json.forEach(element => {
+
+											var section = document.createElement("section");
+											var image = document.createElement("image");
+
+											section.appendChild(image);
+											
+											var element = document.getElementById("two");
+											element.appendChild(section);
 											console.log(element.id);
 										});
 									};
@@ -86,9 +94,8 @@
 						</script>
 
 						<section class="spotlight">
-							<div class="image"><img src="images/1.png" alt="project" /></div><div class="content">
-								<h2>Magna primis lobortis<br />
-								sed ullamcorper</h2>
+							<div class="image" href="project.html?id="><img src="images/1.png" alt="project" /></div><div class="content">
+								<h2>Magna primis lobortis sed ullamcorper</h2>
 								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
 							</div>
 						</section>
