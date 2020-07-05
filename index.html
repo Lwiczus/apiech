@@ -89,7 +89,8 @@
 											var image = document.createElement("img");
 											image.src = "images/" + element.id + ".png";
 
-											spotlight.appendChild(image);
+											spotlight.appendChild(imagediv);
+											imagediv.appendChild(image);
 											
 											var element = document.getElementById("two");
 											element.appendChild(spotlight);
