@@ -81,9 +81,10 @@
 										json.forEach(element => {
 
 											var section = document.createElement("section");
+											section.classList.add("spotlight");
+
 											var image = document.createElement("img");
 											image.src = "images/" + element.id + ".png";
-											console.log(image.src);
 
 											section.appendChild(image);
 											
