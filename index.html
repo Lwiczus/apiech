@@ -76,7 +76,13 @@
 									if (jsonFile.readyState== 4 && jsonFile.status == 200) {
 										//console.log(jsonFile.responseText);
 										var json = JSON.parse(jsonFile.responseText);
-										console.log(json.id[1]);
+										//console.log(json.id[1 -1]);
+
+										for(var i = 0; i < json.length; i++)
+										{
+											var section = json[i];
+											console.log(section + "\n ------------------");
+										}
 									}
 								}
 						</script>
