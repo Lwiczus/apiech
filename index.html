@@ -77,12 +77,9 @@
 										//console.log(jsonFile.responseText);
 										var json = JSON.parse(jsonFile.responseText);
 
-										for(var i = 1; i < json.length; i++)
-										{
-											var section = json[title];
-											console.log(section + "\n ------------------");
-										}
-									}
+										json.array.forEach(element => {
+											console.log(element.id);
+										});
 								}
 						</script>
 
