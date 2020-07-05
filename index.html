@@ -81,7 +81,8 @@
 										json.forEach(element => {
 
 											var section = document.createElement("section");
-											var image = document.createElement("image");
+											var image = document.createElement("img");
+											image.src = "assets/images/" + element.id + "png";
 
 											section.appendChild(image);
 											
