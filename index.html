@@ -89,8 +89,21 @@
 											var image = document.createElement("img");
 											image.src = "images/" + element.id + ".png";
 
+											var content = document.createElement("div");
+											content.classList.add("content");
+
+											var title = document.createElement("h2");
+											title.innerHTML = element.title;
+											
+											var short = document.createElement("p");
+											short.innerHTML = element.short;
+
+
 											spotlight.appendChild(imagediv);
 											imagediv.appendChild(image);
+											spotlight.appendChild(content);
+											content.appendChild(title);
+											content.appendChild(short);
 											
 											var element = document.getElementById("two");
 											element.appendChild(spotlight);
