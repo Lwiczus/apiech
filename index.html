@@ -80,24 +80,30 @@
 
 										json.forEach(element => {
 
-											var section = document.createElement("section");
-											section.classList.add("spotlight");
+											var spotlight = document.createElement("section");
+											spotlight.classList.add("spotlight");
+
+											var imagediv = document.createElement("div");
+											imagediv.classList.add("image");
 
 											var image = document.createElement("img");
 											image.src = "images/" + element.id + ".png";
 
-											section.appendChild(image);
+											spotlight.appendChild(image);
 											
 											var element = document.getElementById("two");
-											element.appendChild(section);
-											console.log(element.id);
+											element.appendChild(spotlight);
 										});
 									};
 								};
 						</script>
 
 						<section class="spotlight">
-							<div class="image" href="project.html?id="><img src="images/1.png" alt="project" /></div><div class="content">
+							<div class="image" href="project.html?id=">
+								<img src="images/1.png" alt="project" />
+							</div>
+							
+							<div class="content">
 								<h2>Magna primis lobortis sed ullamcorper</h2>
 								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
 							</div>
