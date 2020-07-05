@@ -73,14 +73,15 @@
 								jsonFile.send();
 
 								jsonFile.onreadystatechange = function() {
-									if (jsonFile.readyState== 4 && jsonFile.status == 200) {
+									if (jsonFile.readyState== 4 && jsonFile.status == 200) 
+									{
 										//console.log(jsonFile.responseText);
 										var json = JSON.parse(jsonFile.responseText);
 
 										json.array.forEach(element => {
 											console.log(element.id);
 										});
-								}
+									};
 						</script>
 
 						<section class="spotlight">
