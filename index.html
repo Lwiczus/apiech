@@ -82,10 +82,8 @@
 											var projectlink = "/project.html?id=" + element.id;
 
 											var spotlight = document.createElement("section");
-											spotlight.classList.add("spotlight");
-
+											spotlight.classList.add("spotlight"); 
 											spotlight.id = element.id;
-											spotlight.createAttribute("href").value = projectlink;
 
 											var imagediv = document.createElement("div");
 											imagediv.classList.add("image");
@@ -102,7 +100,10 @@
 											var short = document.createElement("p");
 											short.innerHTML = element.short;
 
-
+											var a = document.createElement('a');
+											a.href = projectlink;
+											
+											a.appendChild(spotlight);
 											spotlight.appendChild(imagediv);
 											imagediv.appendChild(image);
 											spotlight.appendChild(content);
