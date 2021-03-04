@@ -103,16 +103,16 @@
 											var a = document.createElement('a');
 											a.href = projectlink;
 											
-											spotlight.appendChild(a);
-											a.appendChild(imagediv);
+											a.appendChild(spotlight);
+											spotlight.appendChild(imagediv);
 											imagediv.appendChild(image);
 											spotlight.appendChild(content);
 											content.appendChild(title);
 											content.appendChild(short);
 
 											
-											var element = document.getElementById("two");
-											element.appendChild(spotlight);
+											var two = document.getElementById("two");
+											two.appendChild(a);
 										});
 									};
 								};
