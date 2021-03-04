@@ -84,18 +84,16 @@
 											var spotlight = document.createElement("section");
 											spotlight.classList.add("spotlight");
 
-											spotlight.href = projectlink;
+											spotlight.id = projectlink;
 
 											var imagediv = document.createElement("div");
 											imagediv.classList.add("image");
 
 											var image = document.createElement("img");
 											image.src = "images/" + element.thumbnail;
-											image.href = projectlink;
-
+											
 											var content = document.createElement("div");
 											content.classList.add("content");
-											content.href = projectlink;
 
 											var title = document.createElement("h2");
 											title.innerHTML = element.title;
