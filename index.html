@@ -84,14 +84,15 @@
 											var spotlight = document.createElement("section");
 											spotlight.classList.add("spotlight");
 
-											spotlight.id = projectlink;
+											spotlight.id = element.id;
+											spotlight.createAttribute("href").value = projectlink;
 
 											var imagediv = document.createElement("div");
 											imagediv.classList.add("image");
 
 											var image = document.createElement("img");
 											image.src = "images/" + element.thumbnail;
-											
+
 											var content = document.createElement("div");
 											content.classList.add("content");
 
@@ -107,6 +108,7 @@
 											spotlight.appendChild(content);
 											content.appendChild(title);
 											content.appendChild(short);
+
 											
 											var element = document.getElementById("two");
 											element.appendChild(spotlight);
