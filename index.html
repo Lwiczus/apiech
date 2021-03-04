@@ -79,21 +79,23 @@
 
 										json.forEach(element => {
 
-											var uri = "/project.html?id=" + element.id;
+											var projectlink = "/project.html?id=" + element.id;
 
 											var spotlight = document.createElement("section");
 											spotlight.classList.add("spotlight");
+
+											spotlight.href = projectlink;
 
 											var imagediv = document.createElement("div");
 											imagediv.classList.add("image");
 
 											var image = document.createElement("img");
 											image.src = "images/" + element.thumbnail;
-											image.href = uri;
+											image.href = projectlink;
 
 											var content = document.createElement("div");
 											content.classList.add("content");
-											content.href = uri;
+											content.href = uprojectlinkri;
 
 											var title = document.createElement("h2");
 											title.innerHTML = element.title;
