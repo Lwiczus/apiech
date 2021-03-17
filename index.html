@@ -100,10 +100,6 @@
 											var short = document.createElement("p");
 											short.innerHTML = element.short;
 
-											var a = document.createElement('a');
-											a.href = projectlink;
-
-											a.appendChild(spotlight);
 											spotlight.appendChild(imagediv);
 											imagediv.appendChild(image);
 											spotlight.appendChild(content);
@@ -112,7 +108,7 @@
 
 											
 											var two = document.getElementById("two");
-											two.appendChild(a);
+											two.appendChild(spotlight);
 										});
 									};
 								};
