@@ -109,7 +109,20 @@
 											
 											var two = document.getElementById("two");
 											two.appendChild(spotlight);
+
+											$(document).ready(function() {
+											$("#" + element.id).click(function(){
+												window.location=$(this).find("a").attr("href");
+												return false;
+											});
 										});
+
+										});
+									}
+									else
+									{
+										alert("Data file cannot be accessed, please check your adblock or internet connection");
+										location.reload();
 									};
 								};
 						</script>
