@@ -227,11 +227,11 @@
             <li>
               <a href="/contact.html" class="button fit primary">Contact</a>
             </li>
-            <li><a id = "emailButton" href="#" class="button fit" onclick="displayEmail()">Reveal Email</a></li>
+            <li><a id = "emailButton" class="button fit" onclick="displayEmail()">Reveal Email</a></li>
             <script>
               function displayEmail()
               {
-                document.getElementById("EmailButton").value = atob("YW5ncGllY2hvd2lha0BnbWFpbC5jb20=");
+                document.getElementById("emailButton").innerHTML = "mailto:" + atob("YW5ncGllY2hvd2lha0BnbWFpbC5jb20=");
               }
             </script>
           </ul>
