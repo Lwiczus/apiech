@@ -59,14 +59,12 @@
                     var entry = json[id - 1];
 
                     var h2 = document.createElement("h2");
-                    var text = document.createTextNode(entry.title);
-                    p.appendChild(text);
+                    h2.innerHTML = entry.title;
                     document.getElementById("head").appendChild(h2);
 
                     var p = document.createElement("p");
-                    var text = document.createTextNode(entry.short);
-                    p.appendChild(text);
-                    document.getElementById("head").appendChild(h2);
+                    h2.innerHTML = entry.short;
+                    document.getElementById("head").appendChild(p);
                 };
             };
 
