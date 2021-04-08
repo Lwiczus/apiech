@@ -40,8 +40,8 @@
             <section class="wrapper style5">
                 <div class="inner">
 
-                    <section>
-                        <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+                    <section id="description">
+                        <!-- Auto gen #69-->
                     </section>
         </article>
 
@@ -65,6 +65,10 @@
                     var p = document.createElement("p");
                     p.innerHTML = entry.short;
                     document.getElementById("head").appendChild(p);
+
+                    var description = document.createElement("p");
+                    description.innerHTML = entry.description;
+                    document.getElementById("description").appendChild(description);
                 };
             };
 
