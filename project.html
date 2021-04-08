@@ -58,8 +58,8 @@
                 if (jsonFile.readyState == 4 && jsonFile.status == 200) {
                     var json = JSON.parse(jsonFile.responseText);
                     var id = getUrlVars()["id"];
-                    console.log(28);
-                    console.log(json[id - 1]);
+                    console.log(34);
+                    console.log(json[id - 1]).title;
                 };
             };
 
