@@ -57,8 +57,9 @@
             jsonFile.onreadystatechange = function() {
                 if (jsonFile.readyState == 4 && jsonFile.status == 200) {
                     var json = JSON.parse(jsonFile.responseText);
-
-                    console.log(getUrlVars()["id"]);
+                    var id = getUrlVars()["id"];
+                    console.log(22);
+                    console.log(json.id[id]);
                 };
             };
 
