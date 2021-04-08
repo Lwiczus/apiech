@@ -34,7 +34,7 @@
 
         <!-- Main -->
         <article id="main">
-            <header>
+            <header id="head">
                 <h2>Elements</h2>
                 <p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
             </header>
@@ -42,7 +42,6 @@
                 <div class="inner">
 
                     <section>
-                        <h4>Text</h4>
                         <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
                     </section>
         </article>
@@ -58,8 +57,17 @@
                 if (jsonFile.readyState == 4 && jsonFile.status == 200) {
                     var json = JSON.parse(jsonFile.responseText);
                     var id = getUrlVars()["id"];
-                    console.log(34);
-                    console.log(json[id - 1]).title;
+                    var entry = json[id - 1];
+
+                    var h2 = document.createElement("h2");
+                    var text = document.createTextNode(entry.title);
+                    p.appendChild(text);
+                    document.getElementById("head").appendChild(h2);
+
+                    var p = document.createElement("p");
+                    var text = document.createTextNode(entry.short);
+                    p.appendChild(text);
+                    document.getElementById("head").appendChild(h2);
                 };
             };
 
