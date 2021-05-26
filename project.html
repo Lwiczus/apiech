@@ -42,6 +42,11 @@
 
                     <section id="description">
                         <!-- Auto gen #69-->
+
+                        <div id="gallery">
+
+
+                        </div>
                     </section>
         </article>
 
@@ -65,6 +70,22 @@
                     var p = document.createElement("p");
                     p.innerHTML = entry.short;
                     document.getElementById("head").appendChild(p);
+
+                    var gallery = entry.images;
+                    var row = document.createElement("div");
+                    row.classList.add("row");
+
+                    gallery.forEach(entryImage => {
+                        var column = document.createElement("div");
+                        column.classList.add("column");
+
+                        var image = document.createElement("img");
+                        image.src = "images/" + gallery;
+
+                        column.appendChild(image);
+                        row.appendChild(column);
+                    });
+                    document.getElementById("head").appendChild(row);
 
                     var description = document.createElement("p");
                     description.innerHTML = entry.description;
