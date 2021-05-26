@@ -4018,3 +4018,16 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+	.column {
+		float: left;
+		width: 33.33%;
+		padding: 5px;
+	  }
+	  
+	  /* Clearfix (clear floats) */
+	  .row::after {
+		content: "";
+		clear: both;
+		display: table;
+	  }
