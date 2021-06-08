@@ -5,7 +5,7 @@
     "short": "Project of portfolio book as an exercise.",
     "description": "Project of portfolio book as an exercise for print preparing, book bleeds and bookbinding. Completed mostly with Adobe InDesign, especially for composition, additional elements, mastery pages, page counting.",
     "thumbnail": "1.png",
-    "images": ["1.1.png", "1.2.png"]
+    "images": ["1.1.png"]
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "short": "Animation connected with image, activated after scanning QR code.",
     "description": "Animation connected with image, activated after scanning QR code. Adobe Photoshop for image and stop-motion animation, Adobe After Effects for connecting animation together, Adobe Premiere for small editing and smoothing, Aurasma for adding, combining all elements of project together, Junaio for activating QR code and checking how all project work on devices.",
     "thumbnail": "2.png",
-    "images": ["2.1.png", "2.2.png"]
+    "images": ["2.1.png", "2.2.png", "2.3.mp4"]
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "short": "Contest for adverting local folk event including concept projects for extra awards containing new logo or sign of event.",
     "description": "Contest for adverting local folk event including concept projects for extra awards containing new logo or sign of event.",
     "thumbnail": "3.png",
-    "images": ["3.1.png", "3.2.png"]
+    "images": ["3.2.pdf", "3.3.jpg"]
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "short": "Made to advertise a new book for a rising artist.",
     "description": "Made to advertise a new book for a rising artist. Containing fragments of his paintings and performances, prepared to show up on big formats on streets such as a bus stops or in front of exhibition place. Made in combination of Adobe InDesign and Illustrator, using Courier New font to fit rest of book and breaking minimalistic design of it. ",
     "thumbnail": "4.png",
-    "images": ["4.1.png", "4.2.png"]
+    "images": ["4.pdf"]
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "short": "Exercise for correctly marking and planning movie/animation frames.",
     "description": "Exercise for correctly marking and planning movie/animation frames by adding arrows and other signs which supposed to suggest where cameras, person or other elements going to move.",
     "thumbnail": "5.png",
-    "images": ["5.1.png", "5.2.png"]
+    "images": ["5.pdf"]
   },
   {
     "id": 8,
@@ -45,7 +45,7 @@
     "short": "Play of paint with high contrast black and light. Composition of 4 different textures matching harmony.",
     "description": "Play of paint with high contrast black and light. Composition of 4 different textures matching harmony.",
     "thumbnail": "8.png",
-    "images": ["8.1.png", "8.2.png"]
+    "images": ["8.jpg"]
   },
   {
     "id": 9,
@@ -53,7 +53,7 @@
     "short": "Using “&” as advert of popular kids poem.",
     "description": "Using “&” as advert of popular kids poem.",
     "thumbnail": "9.png",
-    "images": ["9.1.png", "9.2.png"]
+    "images": ["9.jpg"]
   },
   {
     "id": 10,
@@ -61,7 +61,7 @@
     "short": "Not everything have to be what it looks like.",
     "description": "Not everything have to be what it looks like.",
     "thumbnail": "10.png",
-    "images": ["10.1.png", "10.2.png"]
+    "images": ["10.jpg"]
   },
   {
     "id": 11,
@@ -77,7 +77,7 @@
     "short": "Design of logotype with concept of usage made and prepared in Adobe Illustrator.",
     "description": "Design of logotype with concept of usage made and prepared in Adobe Illustrator.",
     "thumbnail": "12.png",
-    "images": ["12.1.png", "12.2.png"]
+    "images": ["12.1.jpg", "12.2.jpg"]
   },
   {
     "id": 13,
@@ -85,7 +85,7 @@
     "short": "Using known paintings as a base for something new.",
     "description": "Using known paintings as a base for something new.",
     "thumbnail": "13.png",
-    "images": ["13.1.png", "13.2.png"]
+    "images": ["13.1.jpg", "13.2.jpg"]
   },
   {
     "id": 14,
@@ -93,7 +93,7 @@
     "short": "Artwork collection involving a varity of art techniques.",
     "description": "Artwork collection involving a varity of art techniques.",
     "thumbnail": "14.png",
-    "images": ["14.1.png", "14.2.png"]
+    "images": ["14.1.jpg", "14.2.jpg", "14.3.jpg", "14.4.jpg", "14.5.jpg", "14.6.jpg", "14.7.jpg"]
   },
   {
     "id": 15,
@@ -101,6 +101,6 @@
     "short": "Connected to previous job examples of preparation packaging projects.",
     "description": "Connected to previous job examples of preparation packaging projects for mass production, adapting graphic design for grids of different packaging, adding text changes, promotions, occasional elements, EAN codes, etc. Preliminary preparation for printing, including color conversion from RGB to CMYK and pantone in ArtPro 16.1 on Mac OS.",
     "thumbnail": "15.png",
-    "images": ["15.1.png", "15.2.png"]
+    "images": ["15.1.pdf", "15.2.jpg", "15.3.pdf", "15.4.jpg", "15.5.jpg"]
   }
 ]
