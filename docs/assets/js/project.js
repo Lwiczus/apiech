@@ -1,4 +1,3 @@
-console.log("x-x");
 var url = "assets/database.json";
 
 var jsonFile = new XMLHttpRequest();
@@ -10,11 +9,6 @@ jsonFile.onreadystatechange = function () {
     var json = JSON.parse(jsonFile.responseText);
     var id = getUrlVars()["id"];
     var entry = json[id - 1];
-
-    console.log(json);
-
-    console.log("entry", id - 1);
-    console.log("json", json[13]);
 
     var h2 = document.createElement("h2");
     h2.innerHTML = entry.title;
