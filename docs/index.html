@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Apiech Designs</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="./assets/css/noscript.css"
+    /></noscript>
+    <link rel="shortcut icon" type="./image/x-icon" href="./favicon.ico" />
+  </head>
+  <body class="landing is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header" class="alt">
+        <h1><a href="./index.html">Apiech</a></h1>
+        <nav id="nav">
+          <ul>
+            <li class="special">
+              <a href="#menu" class="menuToggle"><span>Menu</span></a>
+              <div id="menu">
+                <ul>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Banner -->
+      <section id="banner">
+        <div class="inner">
+          <h2>Apiech</h2>
+          <p>
+            Designs<br />
+            crafted by <a href="https://kernel-box.com">Kernel-Box</a>.
+          </p>
+          <ul class="actions special">
+            <li><a href="./contact.html" class="button primary">Contact</a></li>
+          </ul>
+        </div>
+        <a href="#one" class="more scrolly">See More</a>
+      </section>
+
+      <!-- One -->
+      <section id="one" class="wrapper style1 special">
+        <div class="inner">
+          <header class="major">
+            <h2>
+              Innovative Graphics and Video Designing<br />
+              Years of experience with creativity all in one<br />
+            </h2>
+            <p>
+              Ranging from graphics, motion, video and 3D designing, a full
+              stack graphic designer with years of experience<br />
+              Holding a prestigious Masters Degree in Graphics Design, I can
+              bring your vision into life, advancing your business in a creative
+              path. Below you will find a small sample of my portfolio!
+            </p>
+          </header>
+          <ul class="icons major">
+            <li>
+              <span class="icon fa-gem major style1"
+                ><span class="label">Lorem</span></span
+              >
+            </li>
+            <li>
+              <span class="icon fa-heart major style2"
+                ><span class="label">Ipsum</span></span
+              >
+            </li>
+            <li>
+              <span class="icon solid fa-code major style3"
+                ><span class="label">Dolor</span></span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Two -->
+      <section id="two" class="wrapper alt style2">
+        <script>
+          var url = "./assets/database.json";
+
+          var jsonFile = new XMLHttpRequest();
+          jsonFile.open("GET", url, true);
+          jsonFile.send();
+
+          jsonFile.onreadystatechange = function () {
+            if (jsonFile.readyState == 4 && jsonFile.status == 200) {
+              var json = JSON.parse(jsonFile.responseText);
+
+              json.forEach((element) => {
+                var projectlink = "./project.html?id=" + element.id;
+
+                var spotlight = document.createElement("section");
+                spotlight.classList.add("spotlight");
+                spotlight.id = element.id;
+
+                var imagediv = document.createElement("div");
+                imagediv.classList.add("image");
+
+                var image = document.createElement("img");
+                image.src = "./images/" + element.thumbnail;
+
+                var content = document.createElement("div");
+                content.classList.add("content");
+
+                var title = document.createElement("h2");
+                title.innerHTML = element.title;
+
+                var short = document.createElement("p");
+                short.innerHTML = element.short;
+
+                spotlight.appendChild(imagediv);
+                imagediv.appendChild(image);
+                spotlight.appendChild(content);
+                content.appendChild(title);
+                content.appendChild(short);
+
+                var two = document.getElementById("two");
+                two.appendChild(spotlight);
+
+                $(document).ready(function () {
+                  $("#" + element.id).click(function () {
+                    window.location = projectlink;
+                    console.log(projectlink);
+                  });
+                });
+              });
+            } else {
+              //alert("Data file cannot be accessed, please check your adblock or internet connection");
+              //location.reload();
+            }
+          };
+        </script>
+      </section>
+
+      <!-- Three -->
+      <section id="three" class="wrapper style3 special">
+        <div class="inner">
+          <header class="major">
+            <h2>
+              A Full stack Graphics Designer holding a prestigious Masters
+              Degree
+            </h2>
+            <p>
+              I have a variety of experience using a full range of software as
+              well as a arsenal of skill sets.<br />
+              Below you will find a small sample of my strongest skill set that
+              I possess from my years of experience working in the industry.
+            </p>
+          </header>
+          <ul class="features">
+            <li class="icon fa-paper-plane">
+              <h3>2D & 3D Designing</h3>
+              <p>
+                Working with the full Adobe Suite, creating 2D and 3D graphics
+                as well ads modelling. Refreshing designs that can meet client
+                requirements.
+              </p>
+            </li>
+            <li class="icon solid fa-laptop">
+              <h3>Proficient IT Skills</h3>
+              <p>
+                Familar with Microsoft Suite, Adobe Suite, Windows, Linux and
+                Mac OS familarity. I have used just about everything and have a
+                fast learning curve for new technology.
+              </p>
+            </li>
+            <li class="icon solid fa-code">
+              <h3>Recreating Code to Design</h3>
+              <p>
+                Experience creating website designs in Photoshop, scaled to fit
+                developer needs. Familar with developer needs and creating 1:1
+                designs and layering.
+              </p>
+            </li>
+            <li class="icon solid fa-headphones-alt">
+              <h3>Audio, Video and Color coordination</h3>
+              <p>
+                Strong sense of Color Theory and Chromesthesia for graphic and
+                video design. Understanding the basics at an advance level to
+                know what works best for clients.
+              </p>
+            </li>
+            <li class="icon fa-heart">
+              <h3>Passion</h3>
+              <p>
+                I have a deep love and passion for bringing the ideas in my
+                clients thoughts to life, making beautiful brands, designs,
+                video promotions, etc. I believe enjoying what you do is what
+                makes a person successful.
+              </p>
+            </li>
+            <li class="icon fa-flag">
+              <h3>Deadlines and project completion</h3>
+              <p>
+                Meeting client deadlines, working to meet and finish a goal. One
+                of most important values is project completion, which I value
+                greatly.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section id="cta" class="wrapper style4">
+        <div class="inner">
+          <header>
+            <h2>Would you like to get in contact?</h2>
+            <p>
+              I am always looking for new and exciting opportunities, you can
+              leave me a message here or send me an email!
+            </p>
+          </header>
+          <ul class="actions stacked">
+            <li>
+              <a href="./contact.html" class="button fit primary">Contact</a>
+            </li>
+            <li>
+              <a id="emailButton" class="button fit" onclick="displayEmail()"
+                >Reveal Email</a
+              >
+            </li>
+            <script>
+              function displayEmail() {
+                alert(atob("YW5ncGllY2hvd2lha0BnbWFpbC5jb20="));
+              }
+            </script>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/angelikapiechowiak/"
+              target="_blank"
+              class="icon brands fa-linkedin"
+              ><span class="label">Linkedin</span></a
+            >
+          </li>
+          <li>
+            <a onclick="displayEmail()" class="icon solid fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>Apiech &copy; 2021</li>
+          <li>Design: <a href="http://Kernel-Box.com">Kernel-Box</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
